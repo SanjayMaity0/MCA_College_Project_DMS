@@ -1,0 +1,294 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Resque_Team_Leader.master.cs" Inherits="Disaster_Management_System.User_Pages.Disater_Management_Dept.Resque_Team.Resque_Team_Leader.Resque_Team_Leader" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style1 {
+            width: 100%;
+            height: 151px;
+        }
+        .auto-style3 {
+            height: 142px;
+            width: 241px;
+            text-align: center;
+        }
+        .auto-style18 {
+            height: 24px;
+            width: 1168px;
+            text-align: center;
+        }
+        .auto-style2 {
+            height: 142px;
+        }
+        .auto-style20 {
+            height: 151px;
+            width: 230px;
+            text-align: center;
+        }
+        .auto-style28 {
+            height: 38px;
+        }
+        .auto-style27 {
+            height: 73px;
+        }
+        .auto-style19 {
+            height: 151px;
+            text-align: center;
+        }
+        .auto-style17 {
+            height: 41px;
+            width: 1168px;
+            text-align: center;
+        }
+        .auto-style15 {
+            height: 36px;
+            width: 1168px;
+            text-align: center;
+        }
+        .auto-style21 {
+            height: 514px;
+            width: 241px;
+        }
+        .auto-style29 {
+            width: 100%;
+        }
+        .auto-style22 {
+            height: 514px;
+            width: 1168px;
+        }
+        .auto-style23 {
+            height: 514px;
+        }
+        .auto-style24 {
+            height: 39px;
+            text-align: center;
+        }
+        .auto-style25 {
+            height: 24px;
+        }
+        .auto-style7 {
+            height: 114px;
+            width: 241px;
+        }
+        .auto-style11 {
+            height: 114px;
+            width: 1168px;
+        }
+        .auto-style30 {
+            height: 114px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <table cellspacing="0" class="auto-style1" style="background-color: #EEFFFF">
+            <tr>
+                <td class="auto-style3" rowspan="3">
+                    <asp:Image ID="Image1" runat="server" Height="155px" ImageUrl="~/Pictures/download.png" Width="241px" />
+                </td>
+                <td class="auto-style18">
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="27pt" ForeColor="#990000" Text="DISASTER MANAGEMENT &amp;  WEATHER FORCAST"></asp:Label>
+                    </td>
+                <td class="auto-style2" rowspan="3">
+                    <table class="auto-style1">
+                        <tr>
+                            <td class="auto-style20">
+                                <table cellspacing="0" class="auto-style1">
+                                    <tr>
+                                        <td class="auto-style28">
+                                            <asp:Button ID="btnLogout" runat="server" Font-Bold="True" ForeColor="#FF4D4D" Text="Logout" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style27">
+                        <asp:Label ID="lblAccountHolder" runat="server" Font-Bold="True" Font-Size="11pt" ForeColor="#1ACF05"></asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Button ID="btnPhotoUpload" runat="server" Font-Bold="True" ForeColor="#FF4D4D" Text="Upload Image" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="auto-style19">
+                                <asp:Image ID="Image2" runat="server" Height="151px" Width="155px" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style17">
+                        <asp:Button ID="btnHome" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Home" Width="116px"  />
+                        <asp:Button ID="btnReg" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Register" Width="116px"  />
+                        <asp:Button ID="btnDisaster" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Disasters" Width="116px"  />
+                        <asp:Button ID="btnteam" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Team" Width="116px"  />
+                        <asp:Button ID="btnAlertsHub" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Alerts Hub" Width="116px"  />
+                        <asp:Button ID="btnAbout" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="About" Width="116px"  />
+                        <asp:Button ID="btnHelp" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Help" Width="116px"  />
+                        </td>
+            </tr>
+            <tr>
+                <td class="auto-style15">
+                        <asp:Label ID="lblAlart_location" runat="server" ForeColor="Red">Alerts</asp:Label>
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style21">
+                    <table class="auto-style29">
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">
+                                <asp:Button ID="Button1" runat="server" Font-Bold="True" Font-Size="11pt" ForeColor="#993399" Height="35px" Text="Add Team Member" Width="203px" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="auto-style22">
+                    &nbsp;</td>
+                <td class="auto-style23">
+                    <table cellspacing="0" class="auto-style1">
+                        <tr>
+                            <td class="auto-style24">
+                                <asp:Button ID="btnEditProfile" runat="server" Font-Bold="True" ForeColor="#FF4D4D" Text="Edit Profile" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style25"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style7"></td>
+                <td class="auto-style11"></td>
+                <td class="auto-style30"></td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>

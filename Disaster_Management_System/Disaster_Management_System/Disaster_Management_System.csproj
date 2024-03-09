@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47D7C6A9-97A2-4DCE-91D4-1C3EB6833C0B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Disaster_Management_System</RootNamespace>
+    <AssemblyName>Disaster_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="General_Pages\About.aspx" />
+    <Content Include="General_Pages\Alerts_Hub.aspx" />
+    <Content Include="General_Pages\Disasters.aspx" />
+    <Content Include="General_Pages\Emergency_Help.aspx" />
+    <Content Include="General_Pages\Registration.aspx" />
+    <Content Include="General_Pages\GeSuccessPage.aspx" />
+    <Content Include="General_Pages\Help.aspx" />
+    <Content Include="General_Pages\Home.aspx" />
+    <Content Include="General_Pages\Medical_Team.aspx" />
+    <Content Include="General_Pages\Register.aspx" />
+    <Content Include="General_Pages\Team.aspx" />
+    <Content Include="Pictures\1-s2.0-S2590061719300523-ga1.jpg" />
+    <Content Include="Pictures\being an emt.jpeg" />
+    <Content Include="Pictures\Disaster-Management-in-India.png" />
+    <Content Include="Pictures\download.png" />
+    <Content Include="Pictures\emergency-numbers-300x214.jpg" />
+    <Content Include="Pictures\emergency_shelter.jpeg" />
+    <Content Include="Pictures\four-pillars-of-disaster-management.jpg" />
+    <Content Include="Pictures\help1.jpeg" />
+    <Content Include="Pictures\help2.jpeg" />
+    <Content Include="Pictures\images %281%29.png" />
+    <Content Include="Pictures\images.png" />
+    <Content Include="Pictures\Screenshot 2023-11-04 193811.png" />
+    <Content Include="User_Pages\General_User\About_GEneral.aspx" />
+    <Content Include="User_Pages\General_User\Alerts_General.aspx" />
+    <Content Include="User_Pages\General_User\Disaster_General.aspx" />
+    <Content Include="User_Pages\General_User\Edit_Profile_Form_General.aspx" />
+    <Content Include="User_Pages\General_User\Emergency_Help_General.aspx" />
+    <Content Include="User_Pages\General_User\Help_General.aspx" />
+    <Content Include="User_Pages\General_User\Medical_Team_General.aspx" />
+    <Content Include="User_Pages\General_User\Profile.aspx" />
+    <Content Include="User_Pages\General_User\Team_General.aspx" />
+    <Content Include="User_Pages\General_User\Upload_Image_General.aspx" />
+    <Content Include="User_Pages\General_User\View_Profile_General.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\About_Medical_TeamLeader.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\AlertsHub_Medical_TeamLeader.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\Disaster_Medical_TeamLeader.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\ProfileEdit_Form_Medical_TeamLeader.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\Help_Medical_TeamLeader.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\Profile_Medical_TeamLeader.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\TeamMemberAdding_Form_Medical_TeamLeader.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\Team_Medical_TeamLeader.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\UploadImage_Medical_TeamLeader.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\View_Profile_Medical_TeamLeader.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Member\About_Medical_TeamMember.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Member\AlertsHub_Medical_TeamMember.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Member\Disaster_Medical_TeamMember.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Member\Edit_Profile_Medical_TeamMember.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Member\Help_Medical_TeamMember.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Member\Profile_Medical_TeamMember.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Member\Team_Medical_TeamMember.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Member\Upload_Image_Medical_TeamMember.aspx" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Member\View_Profile_Medical_TeamMember.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\About_Meteorologi_Head.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Add_TeamMember_Meteorologi_Head.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\AlertsHub_Meteorologi_Head.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Disaster_Meteorologi_Head.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Edit_Profile_Meteorologi_Head.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Help_Meteorologi_Head.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Profile_Meteorologi_Head.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Team_Meteorologi_Head.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Uoload_Image_Meteorologi_Head.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\View_Profile_Meteorologi_Head.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\About_Meteorologi_TeamMember.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Alerts_Meteorologi_TeamMember.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Disaster_Meteorologi_TeamMember.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Edit_Profile_Meteorologi_TeamMember.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Help_Meteorologi_TeamMember.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Profile_Meteorologi_TeamMember.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Team_Meteorologi_TeamMember.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Upload_Image_Meteorologi_TeamMember.aspx" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\View_Profile_Meteorologi_TeamMember.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="General_Pages\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\Alerts_Hub.aspx.cs">
+      <DependentUpon>Alerts_Hub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\Alerts_Hub.aspx.designer.cs">
+      <DependentUpon>Alerts_Hub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\Disasters.aspx.cs">
+      <DependentUpon>Disasters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\Disasters.aspx.designer.cs">
+      <DependentUpon>Disasters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\Emergency_Help.aspx.cs">
+      <DependentUpon>Emergency_Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\Emergency_Help.aspx.designer.cs">
+      <DependentUpon>Emergency_Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\General1.Master.cs">
+      <DependentUpon>General1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\General1.Master.designer.cs">
+      <DependentUpon>General1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\GeSuccessPage.aspx.cs">
+      <DependentUpon>GeSuccessPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\GeSuccessPage.aspx.designer.cs">
+      <DependentUpon>GeSuccessPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\Medical_Team.aspx.cs">
+      <DependentUpon>Medical_Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\Medical_Team.aspx.designer.cs">
+      <DependentUpon>Medical_Team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_Pages\Team.aspx.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_Pages\Team.aspx.designer.cs">
+      <DependentUpon>Team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\DDMO.Master.cs">
+      <DependentUpon>DDMO.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\DDMO.Master.designer.cs">
+      <DependentUpon>DDMO.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Resque_Team_Leader.Master.cs">
+      <DependentUpon>Resque_Team_Leader.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Resque_Team_Leader.Master.designer.cs">
+      <DependentUpon>Resque_Team_Leader.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Resque_Team_Member.Master.cs">
+      <DependentUpon>Resque_Team_Member.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Resque_Team_Member.Master.designer.cs">
+      <DependentUpon>Resque_Team_Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\About_GEneral.aspx.cs">
+      <DependentUpon>About_GEneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\About_GEneral.aspx.designer.cs">
+      <DependentUpon>About_GEneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Alerts_General.aspx.cs">
+      <DependentUpon>Alerts_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Alerts_General.aspx.designer.cs">
+      <DependentUpon>Alerts_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Disaster_General.aspx.cs">
+      <DependentUpon>Disaster_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Disaster_General.aspx.designer.cs">
+      <DependentUpon>Disaster_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Edit_Profile_Form_General.aspx.cs">
+      <DependentUpon>Edit_Profile_Form_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Edit_Profile_Form_General.aspx.designer.cs">
+      <DependentUpon>Edit_Profile_Form_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Emergency_Help_General.aspx.cs">
+      <DependentUpon>Emergency_Help_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Emergency_Help_General.aspx.designer.cs">
+      <DependentUpon>Emergency_Help_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\GeUser.Master.cs">
+      <DependentUpon>GeUser.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\GeUser.Master.designer.cs">
+      <DependentUpon>GeUser.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Help_General.aspx.cs">
+      <DependentUpon>Help_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Help_General.aspx.designer.cs">
+      <DependentUpon>Help_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Medical_Team_General.aspx.cs">
+      <DependentUpon>Medical_Team_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Medical_Team_General.aspx.designer.cs">
+      <DependentUpon>Medical_Team_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Team_General.aspx.cs">
+      <DependentUpon>Team_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Team_General.aspx.designer.cs">
+      <DependentUpon>Team_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Upload_Image_General.aspx.cs">
+      <DependentUpon>Upload_Image_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\Upload_Image_General.aspx.designer.cs">
+      <DependentUpon>Upload_Image_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\General_User\View_Profile_General.aspx.cs">
+      <DependentUpon>View_Profile_General.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\General_User\View_Profile_General.aspx.designer.cs">
+      <DependentUpon>View_Profile_General.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\About_Medical_TeamLeader.aspx.cs">
+      <DependentUpon>About_Medical_TeamLeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\About_Medical_TeamLeader.aspx.designer.cs">
+      <DependentUpon>About_Medical_TeamLeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\AlertsHub_Medical_TeamLeader.aspx.cs">
+      <DependentUpon>AlertsHub_Medical_TeamLeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\AlertsHub_Medical_TeamLeader.aspx.designer.cs">
+      <DependentUpon>AlertsHub_Medical_TeamLeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\Disaster_Medical_TeamLeader.aspx.cs">
+      <DependentUpon>Disaster_Medical_TeamLeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\Disaster_Medical_TeamLeader.aspx.designer.cs">
+      <DependentUpon>Disaster_Medical_TeamLeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\ProfileEdit_Form_Medical_TeamLeader.aspx.cs">
+      <DependentUpon>ProfileEdit_Form_Medical_TeamLeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\ProfileEdit_Form_Medical_TeamLeader.aspx.designer.cs">
+      <DependentUpon>ProfileEdit_Form_Medical_TeamLeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\Help_Medical_TeamLeader.aspx.cs">
+      <DependentUpon>Help_Medical_TeamLeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\Help_Medical_TeamLeader.aspx.designer.cs">
+      <DependentUpon>Help_Medical_TeamLeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\Medical_Team_Leader.Master.cs">
+      <DependentUpon>Medical_Team_Leader.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\Medical_Team_Leader.Master.designer.cs">
+      <DependentUpon>Medical_Team_Leader.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\Profile_Medical_TeamLeader.aspx.cs">
+      <DependentUpon>Profile_Medical_TeamLeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\Profile_Medical_TeamLeader.aspx.designer.cs">
+      <DependentUpon>Profile_Medical_TeamLeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\TeamMemberAdding_Form_Medical_TeamLeader.aspx.cs">
+      <DependentUpon>TeamMemberAdding_Form_Medical_TeamLeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\TeamMemberAdding_Form_Medical_TeamLeader.aspx.designer.cs">
+      <DependentUpon>TeamMemberAdding_Form_Medical_TeamLeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\Team_Medical_TeamLeader.aspx.cs">
+      <DependentUpon>Team_Medical_TeamLeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\Team_Medical_TeamLeader.aspx.designer.cs">
+      <DependentUpon>Team_Medical_TeamLeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\UploadImage_Medical_TeamLeader.aspx.cs">
+      <DependentUpon>UploadImage_Medical_TeamLeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\UploadImage_Medical_TeamLeader.aspx.designer.cs">
+      <DependentUpon>UploadImage_Medical_TeamLeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\View_Profile_Medical_TeamLeader.aspx.cs">
+      <DependentUpon>View_Profile_Medical_TeamLeader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Leader\View_Profile_Medical_TeamLeader.aspx.designer.cs">
+      <DependentUpon>View_Profile_Medical_TeamLeader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\About_Medical_TeamMember.aspx.cs">
+      <DependentUpon>About_Medical_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\About_Medical_TeamMember.aspx.designer.cs">
+      <DependentUpon>About_Medical_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\AlertsHub_Medical_TeamMember.aspx.cs">
+      <DependentUpon>AlertsHub_Medical_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\AlertsHub_Medical_TeamMember.aspx.designer.cs">
+      <DependentUpon>AlertsHub_Medical_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Disaster_Medical_TeamMember.aspx.cs">
+      <DependentUpon>Disaster_Medical_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Disaster_Medical_TeamMember.aspx.designer.cs">
+      <DependentUpon>Disaster_Medical_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Edit_Profile_Medical_TeamMember.aspx.cs">
+      <DependentUpon>Edit_Profile_Medical_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Edit_Profile_Medical_TeamMember.aspx.designer.cs">
+      <DependentUpon>Edit_Profile_Medical_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Help_Medical_TeamMember.aspx.cs">
+      <DependentUpon>Help_Medical_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Help_Medical_TeamMember.aspx.designer.cs">
+      <DependentUpon>Help_Medical_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Medical_Team_Member.Master.cs">
+      <DependentUpon>Medical_Team_Member.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Medical_Team_Member.Master.designer.cs">
+      <DependentUpon>Medical_Team_Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Profile_Medical_TeamMember.aspx.cs">
+      <DependentUpon>Profile_Medical_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Profile_Medical_TeamMember.aspx.designer.cs">
+      <DependentUpon>Profile_Medical_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Team_Medical_TeamMember.aspx.cs">
+      <DependentUpon>Team_Medical_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Team_Medical_TeamMember.aspx.designer.cs">
+      <DependentUpon>Team_Medical_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Upload_Image_Medical_TeamMember.aspx.cs">
+      <DependentUpon>Upload_Image_Medical_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\Upload_Image_Medical_TeamMember.aspx.designer.cs">
+      <DependentUpon>Upload_Image_Medical_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\View_Profile_Medical_TeamMember.aspx.cs">
+      <DependentUpon>View_Profile_Medical_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Medical_team\Medical_Team_Member\View_Profile_Medical_TeamMember.aspx.designer.cs">
+      <DependentUpon>View_Profile_Medical_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\About_Meteorologi_Head.aspx.cs">
+      <DependentUpon>About_Meteorologi_Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\About_Meteorologi_Head.aspx.designer.cs">
+      <DependentUpon>About_Meteorologi_Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Add_TeamMember_Meteorologi_Head.aspx.cs">
+      <DependentUpon>Add_TeamMember_Meteorologi_Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Add_TeamMember_Meteorologi_Head.aspx.designer.cs">
+      <DependentUpon>Add_TeamMember_Meteorologi_Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\AlertsHub_Meteorologi_Head.aspx.cs">
+      <DependentUpon>AlertsHub_Meteorologi_Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\AlertsHub_Meteorologi_Head.aspx.designer.cs">
+      <DependentUpon>AlertsHub_Meteorologi_Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Disaster_Meteorologi_Head.aspx.cs">
+      <DependentUpon>Disaster_Meteorologi_Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Disaster_Meteorologi_Head.aspx.designer.cs">
+      <DependentUpon>Disaster_Meteorologi_Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Edit_Profile_Meteorologi_Head.aspx.cs">
+      <DependentUpon>Edit_Profile_Meteorologi_Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Edit_Profile_Meteorologi_Head.aspx.designer.cs">
+      <DependentUpon>Edit_Profile_Meteorologi_Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Help_Meteorologi_Head.aspx.cs">
+      <DependentUpon>Help_Meteorologi_Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Help_Meteorologi_Head.aspx.designer.cs">
+      <DependentUpon>Help_Meteorologi_Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Meteorologi_Dept.Master.cs">
+      <DependentUpon>Meteorologi_Dept.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Meteorologi_Dept.Master.designer.cs">
+      <DependentUpon>Meteorologi_Dept.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Profile_Meteorologi_Head.aspx.cs">
+      <DependentUpon>Profile_Meteorologi_Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Profile_Meteorologi_Head.aspx.designer.cs">
+      <DependentUpon>Profile_Meteorologi_Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Team_Meteorologi_Head.aspx.cs">
+      <DependentUpon>Team_Meteorologi_Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Team_Meteorologi_Head.aspx.designer.cs">
+      <DependentUpon>Team_Meteorologi_Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Uoload_Image_Meteorologi_Head.aspx.cs">
+      <DependentUpon>Uoload_Image_Meteorologi_Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Uoload_Image_Meteorologi_Head.aspx.designer.cs">
+      <DependentUpon>Uoload_Image_Meteorologi_Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\View_Profile_Meteorologi_Head.aspx.cs">
+      <DependentUpon>View_Profile_Meteorologi_Head.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\View_Profile_Meteorologi_Head.aspx.designer.cs">
+      <DependentUpon>View_Profile_Meteorologi_Head.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\About_Meteorologi_TeamMember.aspx.cs">
+      <DependentUpon>About_Meteorologi_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\About_Meteorologi_TeamMember.aspx.designer.cs">
+      <DependentUpon>About_Meteorologi_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Alerts_Meteorologi_TeamMember.aspx.cs">
+      <DependentUpon>Alerts_Meteorologi_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Alerts_Meteorologi_TeamMember.aspx.designer.cs">
+      <DependentUpon>Alerts_Meteorologi_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Disaster_Meteorologi_TeamMember.aspx.cs">
+      <DependentUpon>Disaster_Meteorologi_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Disaster_Meteorologi_TeamMember.aspx.designer.cs">
+      <DependentUpon>Disaster_Meteorologi_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Edit_Profile_Meteorologi_TeamMember.aspx.cs">
+      <DependentUpon>Edit_Profile_Meteorologi_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Edit_Profile_Meteorologi_TeamMember.aspx.designer.cs">
+      <DependentUpon>Edit_Profile_Meteorologi_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Help_Meteorologi_TeamMember.aspx.cs">
+      <DependentUpon>Help_Meteorologi_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Help_Meteorologi_TeamMember.aspx.designer.cs">
+      <DependentUpon>Help_Meteorologi_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Meterologi_Team_Member.Master.cs">
+      <DependentUpon>Meterologi_Team_Member.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Meterologi_Team_Member.Master.designer.cs">
+      <DependentUpon>Meterologi_Team_Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Profile_Meteorologi_TeamMember.aspx.cs">
+      <DependentUpon>Profile_Meteorologi_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Profile_Meteorologi_TeamMember.aspx.designer.cs">
+      <DependentUpon>Profile_Meteorologi_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Team_Meteorologi_TeamMember.aspx.cs">
+      <DependentUpon>Team_Meteorologi_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Team_Meteorologi_TeamMember.aspx.designer.cs">
+      <DependentUpon>Team_Meteorologi_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Upload_Image_Meteorologi_TeamMember.aspx.cs">
+      <DependentUpon>Upload_Image_Meteorologi_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Upload_Image_Meteorologi_TeamMember.aspx.designer.cs">
+      <DependentUpon>Upload_Image_Meteorologi_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\View_Profile_Meteorologi_TeamMember.aspx.cs">
+      <DependentUpon>View_Profile_Meteorologi_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\View_Profile_Meteorologi_TeamMember.aspx.designer.cs">
+      <DependentUpon>View_Profile_Meteorologi_TeamMember.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="General_Pages\General1.Master" />
+    <Content Include="User_Pages\General_User\GeUser.Master" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\DDMO.Master" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Leader\Medical_Team_Leader.Master" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meteorologi_Dept_Head\Meteorologi_Dept.Master" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Resque_Team_Leader.Master" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Resque_Team_Member.Master" />
+    <Content Include="User_Pages\Medical_team\Medical_Team_Member\Medical_Team_Member.Master" />
+    <Content Include="User_Pages\Meteorologi_Dept\Meterologi_Team_Member\Meterologi_Team_Member.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49845/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
