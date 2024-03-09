@@ -94,15 +94,6 @@ namespace Disaster_Management_System.User_Pages.Disater_Management_Dept.Resque_T
         protected global::System.Web.UI.WebControls.Button btnHome;
         
         /// <summary>
-        /// btnReg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReg;
-        
-        /// <summary>
         /// btnDisaster control.
         /// </summary>
         /// <remarks>
@@ -166,6 +157,15 @@ namespace Disaster_Management_System.User_Pages.Disater_Management_Dept.Resque_T
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
+        /// ContentPlaceHolder1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        
+        /// <summary>
         /// btnEditProfile control.
         /// </summary>
         /// <remarks>
@@ -173,5 +173,14 @@ namespace Disaster_Management_System.User_Pages.Disater_Management_Dept.Resque_T
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEditProfile;
+        
+        /// <summary>
+        /// btnViewProfile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnViewProfile;
     }
 }

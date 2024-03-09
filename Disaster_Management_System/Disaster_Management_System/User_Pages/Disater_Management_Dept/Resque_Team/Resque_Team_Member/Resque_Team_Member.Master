@@ -103,7 +103,7 @@
                                 <table cellspacing="0" class="auto-style1">
                                     <tr>
                                         <td class="auto-style28">
-                                            <asp:Button ID="btnLogout" runat="server" Font-Bold="True" ForeColor="#FF4D4D" Text="Logout" />
+                                            <asp:Button ID="btnLogout" runat="server" Font-Bold="True" ForeColor="#FF4D4D" Text="Logout" OnClick="btnLogout_Click" />
                                         </td>
                                     </tr>
                                     <tr>
@@ -113,7 +113,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <asp:Button ID="btnPhotoUpload" runat="server" Font-Bold="True" ForeColor="#FF4D4D" Text="Upload Image" />
+                                            <asp:Button ID="btnPhotoUpload" runat="server" Font-Bold="True" ForeColor="#FF4D4D" Text="Upload Image" OnClick="btnPhotoUpload_Click" />
                                         </td>
                                     </tr>
                                 </table>
@@ -127,13 +127,12 @@
             </tr>
             <tr>
                 <td class="auto-style17">
-                        <asp:Button ID="btnHome" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Home" Width="116px"  />
-                        <asp:Button ID="btnReg" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Register" Width="116px"  />
-                        <asp:Button ID="btnDisaster" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Disasters" Width="116px"  />
-                        <asp:Button ID="btnteam" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Team" Width="116px"  />
-                        <asp:Button ID="btnAlertsHub" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Alerts Hub" Width="116px"  />
-                        <asp:Button ID="btnAbout" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="About" Width="116px"  />
-                        <asp:Button ID="btnHelp" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Help" Width="116px"  />
+                        <asp:Button ID="btnHome" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Home" Width="116px" OnClick="btnHome_Click"  />
+                        <asp:Button ID="btnDisaster" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Disasters" Width="116px" OnClick="btnDisaster_Click"  />
+                        <asp:Button ID="btnteam" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Team" Width="116px" OnClick="btnteam_Click"  />
+                        <asp:Button ID="btnAlertsHub" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Alerts Hub" Width="116px" OnClick="btnAlertsHub_Click"  />
+                        <asp:Button ID="btnAbout" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="About" Width="116px" OnClick="btnAbout_Click"  />
+                        <asp:Button ID="btnHelp" runat="server" Font-Bold="True" Font-Size="12pt" ForeColor="Blue" Text="Help" Width="116px" OnClick="btnHelp_Click"  />
                         </td>
             </tr>
             <tr>
@@ -208,12 +207,15 @@
                     </table>
                 </td>
                 <td class="auto-style22">
-                    &nbsp;</td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
                 <td class="auto-style23">
                     <table cellspacing="0" class="auto-style1">
                         <tr>
                             <td class="auto-style24">
-                                <asp:Button ID="btnEditProfile" runat="server" Font-Bold="True" ForeColor="#FF4D4D" Text="Edit Profile" />
+                                <asp:Button ID="btnEditProfile" runat="server" Font-Bold="True" ForeColor="#FF4D4D" Text="Edit Profile" OnClick="btnEditProfile_Click" />
+                                <asp:Button ID="btnViewProfile" runat="server" Font-Bold="True" ForeColor="#FF4D4D" Text="View Profile" OnClick="btnViewProfile_Click" />
                             </td>
                         </tr>
                         <tr>

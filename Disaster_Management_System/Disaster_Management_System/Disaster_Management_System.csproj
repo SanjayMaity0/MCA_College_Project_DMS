@@ -84,6 +84,35 @@
     <Content Include="Pictures\images %281%29.png" />
     <Content Include="Pictures\images.png" />
     <Content Include="Pictures\Screenshot 2023-11-04 193811.png" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\About_DDMO.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\Add_Resque_TeamLeader_DDMO.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\AlertsHub_DDMO.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\Edit_Profile_DDMO.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\Help_DDMO.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\Profile_DDMO.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\Disaster_DDMO.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\Team_DDMO.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\Upload_Image_DDMO.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\DDMO_User\View_Profile_DDMO.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\About_Resque_Team_Leader.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Add_TeamMember_Resque_Team_Leader.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\AlertsHubs_Resque_Team_Leader.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Disaster_Resque_Team_Leader.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Edit_Profile_Resque_Team_Leader.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Help_Resque_Team_Leader.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Profile_Resque_Team_Leader.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Team_Resque_Team_Leader.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Upload_Image_Resque_Team_Leader.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\View_Profile_Resque_Team_Leader.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\About_Resque_TeamMember.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\AlertsHub_Resque_TeamMember.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Disaster_Resque_TeamMember.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Edit_Profile_Resque_TeamMember.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Help_Resque_TeamMember.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Profile_Resque_TeamMember.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Team_Resque_TeamMember.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Upload_Image_Resque_TeamMember.aspx" />
+    <Content Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\View_Profile_Resque_TeamMember.aspx" />
     <Content Include="User_Pages\General_User\About_GEneral.aspx" />
     <Content Include="User_Pages\General_User\Alerts_General.aspx" />
     <Content Include="User_Pages\General_User\Disaster_General.aspx" />
@@ -221,12 +250,131 @@
       <DependentUpon>Team.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\About_DDMO.aspx.cs">
+      <DependentUpon>About_DDMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\About_DDMO.aspx.designer.cs">
+      <DependentUpon>About_DDMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Add_Resque_TeamLeader_DDMO.aspx.cs">
+      <DependentUpon>Add_Resque_TeamLeader_DDMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Add_Resque_TeamLeader_DDMO.aspx.designer.cs">
+      <DependentUpon>Add_Resque_TeamLeader_DDMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\AlertsHub_DDMO.aspx.cs">
+      <DependentUpon>AlertsHub_DDMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\AlertsHub_DDMO.aspx.designer.cs">
+      <DependentUpon>AlertsHub_DDMO.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\DDMO.Master.cs">
       <DependentUpon>DDMO.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\DDMO.Master.designer.cs">
       <DependentUpon>DDMO.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\DDMO_Profile.aspx.cs">
+      <DependentUpon>Profile_DDMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\DDMO_Profile.aspx.designer.cs">
+      <DependentUpon>Profile_DDMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Disaster_DDMO.aspx.cs">
+      <DependentUpon>Disaster_DDMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Disaster_DDMO.aspx.designer.cs">
+      <DependentUpon>Disaster_DDMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Edit_Profile_DDMO.aspx.cs">
+      <DependentUpon>Edit_Profile_DDMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Edit_Profile_DDMO.aspx.designer.cs">
+      <DependentUpon>Edit_Profile_DDMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Help_DDMO.aspx.cs">
+      <DependentUpon>Help_DDMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Help_DDMO.aspx.designer.cs">
+      <DependentUpon>Help_DDMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Team_DDMO.aspx.cs">
+      <DependentUpon>Team_DDMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Team_DDMO.aspx.designer.cs">
+      <DependentUpon>Team_DDMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Upload_Image_DDMO.aspx.cs">
+      <DependentUpon>Upload_Image_DDMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\Upload_Image_DDMO.aspx.designer.cs">
+      <DependentUpon>Upload_Image_DDMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\View_Profile_DDMO.aspx.cs">
+      <DependentUpon>View_Profile_DDMO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\DDMO_User\View_Profile_DDMO.aspx.designer.cs">
+      <DependentUpon>View_Profile_DDMO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\About_Resque_Team_Leader.aspx.cs">
+      <DependentUpon>About_Resque_Team_Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\About_Resque_Team_Leader.aspx.designer.cs">
+      <DependentUpon>About_Resque_Team_Leader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Add_TeamMember_Resque_Team_Leader.aspx.cs">
+      <DependentUpon>Add_TeamMember_Resque_Team_Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Add_TeamMember_Resque_Team_Leader.aspx.designer.cs">
+      <DependentUpon>Add_TeamMember_Resque_Team_Leader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\AlertsHubs_Resque_Team_Leader.aspx.cs">
+      <DependentUpon>AlertsHubs_Resque_Team_Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\AlertsHubs_Resque_Team_Leader.aspx.designer.cs">
+      <DependentUpon>AlertsHubs_Resque_Team_Leader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Disaster_Resque_Team_Leader.aspx.cs">
+      <DependentUpon>Disaster_Resque_Team_Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Disaster_Resque_Team_Leader.aspx.designer.cs">
+      <DependentUpon>Disaster_Resque_Team_Leader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Edit_Profile_Resque_Team_Leader.aspx.cs">
+      <DependentUpon>Edit_Profile_Resque_Team_Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Edit_Profile_Resque_Team_Leader.aspx.designer.cs">
+      <DependentUpon>Edit_Profile_Resque_Team_Leader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Help_Resque_Team_Leader.aspx.cs">
+      <DependentUpon>Help_Resque_Team_Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Help_Resque_Team_Leader.aspx.designer.cs">
+      <DependentUpon>Help_Resque_Team_Leader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Profile_Resque_Team_Leader.aspx.cs">
+      <DependentUpon>Profile_Resque_Team_Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Profile_Resque_Team_Leader.aspx.designer.cs">
+      <DependentUpon>Profile_Resque_Team_Leader.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Resque_Team_Leader.Master.cs">
       <DependentUpon>Resque_Team_Leader.Master</DependentUpon>
@@ -235,12 +383,96 @@
     <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Resque_Team_Leader.Master.designer.cs">
       <DependentUpon>Resque_Team_Leader.Master</DependentUpon>
     </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Team_Resque_Team_Leader.aspx.cs">
+      <DependentUpon>Team_Resque_Team_Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Team_Resque_Team_Leader.aspx.designer.cs">
+      <DependentUpon>Team_Resque_Team_Leader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Upload_Image_Resque_Team_Leader.aspx.cs">
+      <DependentUpon>Upload_Image_Resque_Team_Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\Upload_Image_Resque_Team_Leader.aspx.designer.cs">
+      <DependentUpon>Upload_Image_Resque_Team_Leader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\View_Profile_Resque_Team_Leader.aspx.cs">
+      <DependentUpon>View_Profile_Resque_Team_Leader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Leader\View_Profile_Resque_Team_Leader.aspx.designer.cs">
+      <DependentUpon>View_Profile_Resque_Team_Leader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\About_Resque_TeamMember.aspx.cs">
+      <DependentUpon>About_Resque_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\About_Resque_TeamMember.aspx.designer.cs">
+      <DependentUpon>About_Resque_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\AlertsHub_Resque_TeamMember.aspx.cs">
+      <DependentUpon>AlertsHub_Resque_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\AlertsHub_Resque_TeamMember.aspx.designer.cs">
+      <DependentUpon>AlertsHub_Resque_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Disaster_Resque_TeamMember.aspx.cs">
+      <DependentUpon>Disaster_Resque_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Disaster_Resque_TeamMember.aspx.designer.cs">
+      <DependentUpon>Disaster_Resque_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Edit_Profile_Resque_TeamMember.aspx.cs">
+      <DependentUpon>Edit_Profile_Resque_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Edit_Profile_Resque_TeamMember.aspx.designer.cs">
+      <DependentUpon>Edit_Profile_Resque_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Help_Resque_TeamMember.aspx.cs">
+      <DependentUpon>Help_Resque_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Help_Resque_TeamMember.aspx.designer.cs">
+      <DependentUpon>Help_Resque_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Profile_Resque_TeamMember.aspx.cs">
+      <DependentUpon>Profile_Resque_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Profile_Resque_TeamMember.aspx.designer.cs">
+      <DependentUpon>Profile_Resque_TeamMember.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Resque_Team_Member.Master.cs">
       <DependentUpon>Resque_Team_Member.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Resque_Team_Member.Master.designer.cs">
       <DependentUpon>Resque_Team_Member.Master</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Team_Resque_TeamMember.aspx.cs">
+      <DependentUpon>Team_Resque_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Team_Resque_TeamMember.aspx.designer.cs">
+      <DependentUpon>Team_Resque_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Upload_Image_Resque_TeamMember.aspx.cs">
+      <DependentUpon>Upload_Image_Resque_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\Upload_Image_Resque_TeamMember.aspx.designer.cs">
+      <DependentUpon>Upload_Image_Resque_TeamMember.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\View_Profile_Resque_TeamMember.aspx.cs">
+      <DependentUpon>View_Profile_Resque_TeamMember.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Pages\Disater_Management_Dept\Resque_Team\Resque_Team_Member\View_Profile_Resque_TeamMember.aspx.designer.cs">
+      <DependentUpon>View_Profile_Resque_TeamMember.aspx</DependentUpon>
     </Compile>
     <Compile Include="User_Pages\General_User\About_GEneral.aspx.cs">
       <DependentUpon>About_GEneral.aspx</DependentUpon>
