@@ -30,14 +30,14 @@ namespace Disaster_Management_System.General_Pages
 
         protected void btnMeteorologi_Click(object sender, EventArgs e)
         {
-            Session["Count"] = "one";
+            Session["Count"] = "One";
             Session["UserClass"] = "Meteorologi";
             Response.Redirect("~/General_Pages/Registration.aspx");
         }
 
         protected void btnMedicalTeam_Click(object sender, EventArgs e)
         {
-            Session["Count"] = "one";
+            Session["Count"] = "One";
             Session["UserClass"] = "Medical_Team";
             Response.Redirect("~/General_Pages/Registration.aspx");
         }

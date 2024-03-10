@@ -57,9 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database1.mdf" />
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
+    <Content Include="App_Data\SanjayDatabase.mdf" />
+    <Content Include="App_Data\SanjayDatabase_log.ldf">
+      <DependentUpon>SanjayDatabase.mdf</DependentUpon>
     </Content>
     <Content Include="General_Pages\About.aspx" />
     <Content Include="General_Pages\Alerts_Hub.aspx" />

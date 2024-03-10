@@ -28,7 +28,7 @@
         }
         .auto-style48 {
             height: 26px;
-            width: 194px;
+            width: 183px;
         text-align: left;
     }
         .auto-style49 {
@@ -37,7 +37,7 @@
         }
         .auto-style50 {
             height: 29px;
-            width: 194px;
+            width: 183px;
         text-align: left;
     }
         .auto-style51 {
@@ -50,11 +50,11 @@
     }
         .auto-style56 {
             height: 48px;
-            width: 194px;
+            width: 183px;
         }
         .auto-style58 {
         height: 32px;
-        width: 194px;
+        width: 183px;
     }
     .auto-style59 {
         height: 32px;
@@ -73,8 +73,7 @@
     }
     .auto-style64 {
         text-align: center;
-        width: 317px;
-    }
+        }
     .auto-style65 {
         text-align: center;
         height: 26px;
@@ -83,6 +82,19 @@
     .auto-style66 {
         height: 48px;
         width: 317px;
+    }
+    .auto-style67 {
+        text-align: left;
+        width: 183px;
+    }
+    .auto-style68 {
+        text-align: left;
+        height: 13px;
+    }
+    .auto-style69 {
+        text-align: left;
+        width: 183px;
+        height: 13px;
     }
     </style>
 </asp:Content>
@@ -112,7 +124,7 @@
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">
+            <td class="auto-style67">
                 <asp:Label ID="lblCountry" runat="server" Text="Country  :" style="text-align: left"></asp:Label>
             </td>
             <td class="auto-style40">
@@ -122,7 +134,7 @@
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">
+            <td class="auto-style67">
                 <asp:Label ID="lblState" runat="server" Text="State :"></asp:Label>
             </td>
             <td class="auto-style40">
@@ -142,7 +154,7 @@
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">
+            <td class="auto-style67">
                 <asp:Label ID="lblPin" runat="server" Text="Pin  :"></asp:Label>
             </td>
             <td class="auto-style40">
@@ -152,7 +164,7 @@
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">
+            <td class="auto-style67">
                 <asp:Label ID="lblMobile" runat="server" Text="Mobile  :"></asp:Label>
             </td>
             <td class="auto-style40">
@@ -162,7 +174,7 @@
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">
+            <td class="auto-style67">
                 <asp:Label ID="lblMail" runat="server"></asp:Label>
             </td>
             <td class="auto-style40">
@@ -172,7 +184,7 @@
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">
+            <td class="auto-style67">
                 <asp:Label ID="lblPass" runat="server" Text="Password  :"></asp:Label>
             </td>
             <td class="auto-style40">
@@ -182,7 +194,7 @@
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">
+            <td class="auto-style67">
                 <asp:Label ID="lblComPass" runat="server" Text="Comfarm Password  :"></asp:Label>
             </td>
             <td class="auto-style40">
@@ -191,53 +203,54 @@
             <td class="auto-style37">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style43" colspan="4">&nbsp;</td>
+            <td class="auto-style68"></td>
+            <td class="auto-style69"></td>
+            <td class="auto-style68" colspan="2"></td>
         </tr>
         <tr>
             <td class="auto-style65"></td>
             <td class="auto-style60" colspan="2">
-                <asp:Button ID="btnPreview" runat="server" Font-Bold="True" ForeColor="#CC3300"  Text="Preview" Width="170px" Font-Size="12pt" OnClick="btnPreview_Click" />
-            </td>
+                &nbsp;</td>
             <td class="auto-style61"></td>
         </tr>
         <tr>
             <td class="auto-style43" colspan="4">
-                <asp:Label ID="lblErrorMsg" runat="server" Font-Size="12pt" ForeColor="Red"></asp:Label>
+                <asp:Button ID="btnPreview" runat="server" Font-Bold="True" ForeColor="#CC3300"  Text="Preview" Width="170px" Font-Size="12pt" OnClick="btnPreview_Click" />
             </td>
         </tr>
         <tr>
+            <td class="auto-style64" colspan="3">
+                <asp:Label ID="lblErrorMsg" runat="server" Font-Size="12pt" ForeColor="Red"></asp:Label>
+            </td>
+            <td class="auto-style37">&nbsp;</td>
+        </tr>
+        <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">&nbsp;</td>
+            <td class="auto-style67">&nbsp;</td>
             <td class="auto-style40">&nbsp;</td>
             <td class="auto-style37">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">&nbsp;</td>
+            <td class="auto-style67">&nbsp;</td>
             <td class="auto-style40">&nbsp;</td>
             <td class="auto-style37">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">&nbsp;</td>
+            <td class="auto-style67">&nbsp;</td>
             <td class="auto-style40">&nbsp;</td>
             <td class="auto-style37">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">&nbsp;</td>
+            <td class="auto-style67">&nbsp;</td>
             <td class="auto-style40">&nbsp;</td>
             <td class="auto-style37">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">&nbsp;</td>
-            <td class="auto-style40">&nbsp;</td>
-            <td class="auto-style37">&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">&nbsp;</td>
+            <td class="auto-style67">&nbsp;</td>
             <td class="auto-style40">&nbsp;</td>
             <td class="auto-style37">&nbsp;</td>
         </tr>
@@ -249,7 +262,7 @@
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">&nbsp;</td>
+            <td class="auto-style67">&nbsp;</td>
             <td class="auto-style40">&nbsp;</td>
             <td class="auto-style37">&nbsp;</td>
         </tr>
@@ -261,19 +274,19 @@
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">&nbsp;</td>
+            <td class="auto-style67">&nbsp;</td>
             <td class="auto-style40">&nbsp;</td>
             <td class="auto-style37">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">&nbsp;</td>
+            <td class="auto-style67">&nbsp;</td>
             <td class="auto-style40">&nbsp;</td>
             <td class="auto-style37">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style64">&nbsp;</td>
-            <td class="auto-style46">&nbsp;</td>
+            <td class="auto-style67">&nbsp;</td>
             <td class="auto-style40">&nbsp;</td>
             <td class="auto-style37">&nbsp;</td>
         </tr>

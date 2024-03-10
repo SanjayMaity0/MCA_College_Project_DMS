@@ -11,6 +11,7 @@ namespace Disaster_Management_System.User_Pages.Medical_team
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblAccountHolder.Text = Session["Auth_user_id"].ToString();
 
         }
 

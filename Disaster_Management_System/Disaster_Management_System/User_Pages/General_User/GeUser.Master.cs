@@ -20,7 +20,7 @@ namespace Disaster_Management_System.User_Pages.General_User
             //DataRow[] dr = dt.Select("User_Id='" + Session["Auth_user_id"].ToString() + "'");
             //lblAccountHolder.Text = dr[0]["Name"].ToString();
 
-            //lblAccountHolder.Text = Session["Auth_user_id"].ToString();
+            lblAccountHolder.Text = Session["Auth_user_id"].ToString();
             
           
         }

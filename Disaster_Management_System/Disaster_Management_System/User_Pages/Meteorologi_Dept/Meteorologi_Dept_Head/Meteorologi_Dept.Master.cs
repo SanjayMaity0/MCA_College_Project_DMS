@@ -11,7 +11,7 @@ namespace Disaster_Management_System.User_Pages.Meteorologi_Dept
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblAccountHolder.Text = Session["Auth_user_id"].ToString();
         }
 
         protected void btnHome_Click(object sender, EventArgs e)

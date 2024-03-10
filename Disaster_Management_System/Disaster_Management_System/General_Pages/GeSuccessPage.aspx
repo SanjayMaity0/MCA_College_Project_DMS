@@ -21,6 +21,22 @@
             text-align: left;
             width: 203px;
         }
+    .auto-style35 {
+        text-align: center;
+        height: 26px;
+    }
+    .auto-style36 {
+        text-align: left;
+        width: 203px;
+        height: 26px;
+    }
+    .auto-style37 {
+        width: 261px;
+        height: 26px;
+    }
+    .auto-style38 {
+        height: 26px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -117,12 +133,14 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style32">&nbsp;</td>
-            <td class="auto-style34">
-                &nbsp;</td>
-            <td class="auto-style33">
-                &nbsp;</td>
-            <td>&nbsp;</td>
+            <td class="auto-style35"></td>
+            <td class="auto-style36">
+                <asp:Label ID="lblUserStatus0" runat="server" Text="User Status : "></asp:Label>
+            </td>
+            <td class="auto-style37">
+                <asp:Label ID="lblUserStatus" runat="server"></asp:Label>
+            </td>
+            <td class="auto-style38"></td>
         </tr>
         <tr>
             <td class="auto-style32">&nbsp;</td>

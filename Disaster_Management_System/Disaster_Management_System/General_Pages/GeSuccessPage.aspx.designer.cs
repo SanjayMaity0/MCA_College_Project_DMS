@@ -166,6 +166,24 @@ namespace Disaster_Management_System.General_Pages {
         protected global::System.Web.UI.WebControls.Label lblPass;
         
         /// <summary>
+        /// lblUserStatus0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUserStatus0;
+        
+        /// <summary>
+        /// lblUserStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblUserStatus;
+        
+        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>

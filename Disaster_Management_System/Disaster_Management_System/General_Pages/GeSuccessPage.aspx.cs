@@ -11,7 +11,7 @@ namespace Disaster_Management_System.General_Pages
 {
     public partial class GeSuccessPage : System.Web.UI.Page
     {
-        SqlDataAdapter adp = new SqlDataAdapter(" select * from [dbo].[UserDataTable]", @"Data Source=(LocalDB)\v11.0;AttachDbFilename=F:\Project_Net_by_KK\Final_Project\Disaster_Management_System\Disaster_Management_System\App_Data\Database1.mdf;Integrated Security=True");
+        SqlDataAdapter adp = new SqlDataAdapter(" select * from [dbo].[UserDataTable]", @"Data Source=(LocalDB)\v11.0;AttachDbFilename=F:\Project_Net_by_KK\Final_Project\MCA_College_Project_DMS\Disaster_Management_System\Disaster_Management_System\App_Data\SanjayDatabase.mdf;Integrated Security=True");
         DataTable dt = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,12 +26,13 @@ namespace Disaster_Management_System.General_Pages
             lblPin.Text = Session["Pin"].ToString();
             lblMobile.Text = Session["Mobile"].ToString();
             lblMail.Text = Session["Mail"].ToString();
+            lblUserStatus.Text = Session["UserClass"].ToString();
         }
 
         protected void btnPrevious_Click(object sender, EventArgs e)
         {
             Session["Count"]= "two";
-            Response.Redirect("~/General_Pages/GeneralRegistration.aspx");
+            Response.Redirect("~/General_Pages/Registration.aspx");
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
@@ -48,7 +49,7 @@ namespace Disaster_Management_System.General_Pages
             dr["Name"] = Session["Name"].ToString();
             dt.Rows.Add(dr);
             adp.Update(dt);
-            lblSuccessMsg.Text = "You Successfully Register";
+            lblSuccessMsg.Text = "You Successfully Register.... GO TO HOME for LOGIN";
            // Response.Redirect("~/General_Pages/Home.aspx");
         }
     }

@@ -11,7 +11,7 @@ namespace Disaster_Management_System.General_Pages
 {
     public partial class General2 : System.Web.UI.MasterPage
     {
-        SqlDataAdapter adp = new SqlDataAdapter("select *from [dbo].[UserDataTable]", @"Data Source=(LocalDB)\v11.0;AttachDbFilename=F:\Project_Net_by_KK\Final_Project\Disaster_Management_System\Disaster_Management_System\App_Data\Database1.mdf;Integrated Security=True");
+        SqlDataAdapter adp = new SqlDataAdapter("select *from [dbo].[UserDataTable]", @"Data Source=(LocalDB)\v11.0;AttachDbFilename=F:\Project_Net_by_KK\Final_Project\MCA_College_Project_DMS\Disaster_Management_System\Disaster_Management_System\App_Data\SanjayDatabase.mdf;Integrated Security=True");
         DataTable dt = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -82,13 +82,26 @@ namespace Disaster_Management_System.General_Pages
                 if (txtPass.Text == dr[0]["Pass"].ToString())
                 {
                     //lblLoginAlart.Text = dr[0]["User_Id"].ToString() + "You Successfully Logiin";
-                   // Session["Auth_user_id"] = dr[0]["User_Id"].ToString();
+                    Session["Auth_user_id"] = dr[0]["User_Id"].ToString();
                     //Response.Redirect("~/User_Pages/General_User/Profile.aspx");
                     if (dr[0]["User_Class"].ToString() == "General")
                     {
-                        Session["Auth_user_id"] = dr[0]["Email"].ToString();
+                        //Session["Auth_user_id"] = dr[0]["Email"].ToString();
                         //lblLoginAlart.Text = Session["Auth_user_id"].ToString();
                         Response.Redirect("~/User_Pages/General_User/Profile.aspx");
+                    }
+
+                    if (dr[0]["User_Class"].ToString() == "DDMO")
+                    {
+                        Response.Redirect("~/User_Pages/Disater_Management_Dept/DDMO_User/Profile_DDMO.aspx");
+                    }
+                    if (dr[0]["User_Class"].ToString() == "Meteorologi")
+                    {
+                        Response.Redirect("~/User_Pages/Meteorologi_Dept/Meteorologi_Dept_Head/Profile_Meteorologi_Head.aspx");
+                    }
+                    if (dr[0]["User_Class"].ToString() == "Medical_Team")
+                    {
+                        Response.Redirect("~/User_Pages/Medical_team/Medical_Team_Leader/Profile_Medical_TeamLeader.aspx");
                     }
                     
                     

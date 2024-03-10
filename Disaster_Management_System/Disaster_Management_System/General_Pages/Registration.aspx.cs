@@ -11,7 +11,7 @@ namespace Disaster_Management_System.General_Pages
 {
     public partial class GeneralRegistration : System.Web.UI.Page
     {
-        SqlDataAdapter adp = new SqlDataAdapter("select * from [dbo].[UserDataTable]", @"Data Source=(LocalDB)\v11.0;AttachDbFilename=F:\Project_Net_by_KK\Final_Project\Disaster_Management_System\Disaster_Management_System\App_Data\Database1.mdf;Integrated Security=True");
+        SqlDataAdapter adp = new SqlDataAdapter("select * from [dbo].[UserDataTable]", @"Data Source=(LocalDB)\v11.0;AttachDbFilename=F:\Project_Net_by_KK\Final_Project\MCA_College_Project_DMS\Disaster_Management_System\Disaster_Management_System\App_Data\SanjayDatabase.mdf;Integrated Security=True");
         DataTable dt = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -88,15 +88,15 @@ namespace Disaster_Management_System.General_Pages
                         }
                         else
                         {
-                            Session["Name"] = txtName.Text.ToString();
-                            Session["Country"] = txtCountry.Text.ToString();
-                            Session["State"] = txtState.Text.ToString();
-                            Session["Dist"] = txtDist.Text.ToString();
-                            Session["Pin"] = txtPin.Text.ToString();
-                            Session["Mobile"] = txtMobile.Text.ToString();
-                            Session["Mail"] = txtMail.Text.ToString();
+                            Session["Name"] = txtName.Text;
+                            Session["Country"] = txtCountry.Text;
+                            Session["State"] = txtState.Text;
+                            Session["Dist"] = txtDist.Text;
+                            Session["Pin"] = txtPin.Text;
+                            Session["Mobile"] = txtMobile.Text;
+                            Session["Mail"] = txtMail.Text;
                             // Session["UserId"] = txtUserId.Text.ToString();
-                            Session["Pass"] = txtPass.Text.ToString();
+                            Session["Pass"] = txtPass.Text;
                             Response.Redirect("~/General_Pages/GeSuccessPage.aspx");
                         }
                     }
